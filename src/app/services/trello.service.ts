@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
-// TRELLO_ACCESS_KEY = '40cc90ac288f8234f9b41d99147c954f';
-// TRELLO_ACCES_TOKEN =
-//   'cb79abf820b1989eb2e0cd526f278c247ff14a1d1dbb8dd95bfe123ed44ab0ad';
+
 @Injectable({
   providedIn: 'root',
 })
