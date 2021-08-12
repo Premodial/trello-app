@@ -1,0 +1,152 @@
+<div>
+  <div class="card">
+    <h2 class="card-header main">Trello Board Demo</h2>
+    <div class="card-body">
+      <label>Trello Key</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Please Enter Your Trello Key"
+        [(ngModel)]="trelloKey"
+      />
+      <br />
+      <label>Trello Token</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Please Enter Your Trello token"
+        [(ngModel)]="trelloToken"
+      />
+    </div>
+    <div class="card-footer">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="saveTrealloBoardKeyAndToken()"
+      >
+        Save Keys
+      </button>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="card">
+    <h5 class="card-header">Create A New Trello Board</h5>
+    <div class="card-body">
+      <label>Board Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Please Enter Board Name"
+        [(ngModel)]="trelloBoardName"
+      />
+    </div>
+    <div class="card-footer">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="createTrealloBoard()"
+      >
+        Create Board
+      </button>
+    </div>
+  </div>
+  <br />
+  <div class="card">
+    <h5 class="card-header">Create A New Trello Board List</h5>
+    <div class="card-body">
+      <label>List Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Please Enter Board List Name"
+        [(ngModel)]="trelloListName"
+      />
+    </div>
+    <div class="card-footer">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="addListOnTrelloBoard()"
+      >
+        Create List
+      </button>
+    </div>
+  </div>
+  <br />
+  <div class="card">
+    <h5 class="card-header">Remove A Trello Board List</h5>
+    <div class="card-body">
+      <label>List Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Please Enter Board List Name"
+      />
+    </div>
+    <div class="card-footer">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="removeListOnTrelloBoard()"
+      >
+        Romove List
+      </button>
+    </div>
+  </div>
+  <br />
+  <div class="card">
+    <h5 class="card-header">Add A Card On Trello Board List</h5>
+    <div class="card-body">
+      <label>Card Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputPassword1"
+        placeholder="Board Name"
+        [(ngModel)]="trelloCardName"
+      />
+      <br />
+
+      <label>List Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Please Enter Board Card Name"
+        [(ngModel)]="trelloListName"
+      />
+    </div>
+    <div class="card-footer">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="addCardOnTrelloBoardList()"
+      >
+        Add Card
+      </button>
+    </div>
+  </div>
+
+  <br />
+  <div class="card">
+    <h5 class="card-header">Remove A Card On Trello Board List</h5>
+    <div class="card-body">
+      <label>Card Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Please Enter Board Card Name"
+      />
+      <br />
+    </div>
+    <div class="card-footer">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        (click)="removeCardOnTrelloBoardList()"
+      >
+        Remove Card
+      </button>
+    </div>
+  </div>
+</div>
